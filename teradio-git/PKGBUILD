@@ -1,4 +1,4 @@
-# Maintainer: Sen <senin@email.com>
+# Maintainer: Batuhan <batuhd@users.noreply.github.com>
 # AUR paketi: teradio-git (git HEAD'den derler, sürüm numarası yok)
 _app=teradio
 pkgname=teradio-git
@@ -6,7 +6,7 @@ pkgver=r1.0000000
 pkgrel=1
 pkgdesc="Terminalde çalışan internet radyosu (ncspot tarzı, mpv tabanlı) — git sürümü"
 arch=('any')
-url="https://github.com/KULLANICI_ADIN/teradio"
+url="https://github.com/batuhd/teradio"
 license=('MIT')
 depends=('python' 'mpv')
 makedepends=('git')

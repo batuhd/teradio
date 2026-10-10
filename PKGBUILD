@@ -1,10 +1,10 @@
-# Maintainer: Sen <senin@email.com>
+# Maintainer: Batuhan <batuhd@users.noreply.github.com>
 pkgname=teradio
 pkgver=0.1.0
 pkgrel=1
 pkgdesc="Terminalde çalışan internet radyosu (ncspot tarzı, mpv tabanlı)"
 arch=('any')
-url="https://github.com/KULLANICI_ADIN/teradio"
+url="https://github.com/batuhd/teradio"
 license=('MIT')
 depends=('python' 'mpv')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
