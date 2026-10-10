@@ -20,7 +20,24 @@ istasyonları [radio-browser.info](https://www.radio-browser.info/) üzerinden
 
 ## Kurulum
 
-### Arch / CachyOS (AUR)
+### Arch / CachyOS (tek satır, AUR'suz)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/batuhd/teradio/main/install.sh | sh
+```
+
+Bu, kaynaktan derleyip `pacman` ile kurar (paket olarak izlenir).
+
+### Arch / CachyOS — hazır paket (derlemesiz)
+
+[Releases](https://github.com/batuhd/teradio/releases) sayfasındaki `.pkg.tar.zst`
+dosyasını indirip kur:
+
+```bash
+sudo pacman -U teradio-*.pkg.tar.zst
+```
+
+### AUR (yakında)
 
 ```bash
 yay -S teradio      # veya: paru -S teradio
@@ -29,12 +46,10 @@ yay -S teradio      # veya: paru -S teradio
 > `pacman -S teradio` yalnızca resmi depodaki paketler için çalışır. AUR
 > paketleri `yay`/`paru` ile kurulur; komut deneyimi aynıdır.
 
-### pipx / pip (her dağıtım)
+### pipx (her dağıtım)
 
 ```bash
-pipx install teradio
-# veya
-pip install --user teradio
+pipx install git+https://github.com/batuhd/teradio
 ```
 
 ### Gereksinimler
