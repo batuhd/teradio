@@ -30,11 +30,8 @@ Bu, kaynaktan derleyip `pacman` ile kurar (paket olarak izlenir).
 
 ### Arch / CachyOS — hazır paket (derlemesiz)
 
-[Releases](https://github.com/batuhd/teradio/releases) sayfasındaki `.pkg.tar.zst`
-dosyasını indirip kur:
-
 ```bash
-sudo pacman -U teradio-*.pkg.tar.zst
+sudo pacman -U https://github.com/batuhd/teradio/releases/download/v0.1.0/teradio-0.1.0-1-any.pkg.tar.zst
 ```
 
 ### AUR (yakında)
