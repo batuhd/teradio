@@ -15,23 +15,27 @@ gereksinimi `mpv` (PKGBUILD `depends` ile çeker).
 
 ## 1) Kodu GitHub'a koy
 
-> Önemli: Bu klasör şu an üst dizindeki bir git deposunun içinde ve kendi
-> `.git`'i yok. Yayın için Teradio'nun **kendi** deposunu oluştur.
+> Yerel repo ve ilk commit **zaten hazır** (`git init` + `commit` yapıldı, 20
+> dosya). Sana sadece GitHub'da repo açıp push etmek kalıyor.
 
 ```bash
 cd ~/Belgeler/git/Teradio
-git init                       # Teradio'yu kendi deposu yapar
-git add -A
-git commit -m "Teradio 0.1.0"
 
-# GitHub'da boş bir repo oluştur (ad: teradio), sonra:
-git remote add origin git@github.com:KULLANICI_ADIN/teradio.git
-git branch -M main
-git push -u origin main
+# (Sadece GitHub repo oluşturup push için) github-cli kurulmamışsa:
+sudo pacman -S github-cli
+gh auth login                     # tarayıcıdan giriş; git kimliğini de kurar
 
-# Sürüm etiketi (PKGBUILD bunu indirir):
+gh repo create teradio --public --source=. --push
 git tag v0.1.0
 git push origin v0.1.0
+```
+
+Alternatif (gh istemezsen): GitHub'da web'den boş `teradio` reposu aç, sonra:
+
+```bash
+git remote add origin git@github.com:KULLANICI_ADIN/teradio.git
+git push -u origin main
+git tag v0.1.0 && git push origin v0.1.0
 ```
 
 ## 2) PKGBUILD'ı kendine göre doldur
