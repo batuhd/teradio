@@ -8,7 +8,7 @@ url="https://github.com/batuhd/teradio"
 license=('MIT')
 depends=('python' 'mpv')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('2d5e0ea7f02c637ed1cabab34785d3d9f402aaa796ceabc8a40e5fda702d6f3c')
 
 build() {
   cd "$pkgname-$pkgver"

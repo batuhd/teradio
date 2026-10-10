@@ -2,7 +2,7 @@ pkgbase = teradio-git
 	pkgdesc = Terminalde çalışan internet radyosu (ncspot tarzı, mpv tabanlı) — git sürümü
 	pkgver = r1.0000000
 	pkgrel = 1
-	url = https://github.com/KULLANICI_ADIN/teradio
+	url = https://github.com/batuhd/teradio
 	arch = any
 	license = MIT
 	makedepends = git
@@ -10,7 +10,7 @@ pkgbase = teradio-git
 	depends = mpv
 	provides = teradio
 	conflicts = teradio
-	source = teradio-git::git+https://github.com/KULLANICI_ADIN/teradio.git
+	source = teradio-git::git+https://github.com/batuhd/teradio.git
 	sha256sums = SKIP
 
 pkgname = teradio-git
