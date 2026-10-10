@@ -1,0 +1,89 @@
+Screen {
+    background: $surface;
+}
+
+/* ---- üst şerit ---- */
+#titlebar {
+    dock: top;
+    height: 1;
+    padding: 0 1;
+    background: $primary;
+    color: $text;
+    text-style: bold;
+}
+
+#body {
+    height: 1fr;
+}
+
+/* ---- sol panel ---- */
+#cats {
+    width: 24;
+    height: 1fr;
+    padding: 0;
+    background: $panel;
+    border: round $primary;
+}
+
+#cats > ListItem {
+    padding: 0 1;
+}
+
+#cats > ListItem:hover {
+    background: $boost;
+}
+
+#cats > ListItem.-highlight {
+    background: $accent;
+    color: $text;
+    text-style: bold;
+}
+
+/* ---- ana panel ---- */
+#main {
+    width: 1fr;
+}
+
+#search {
+    display: block;
+    margin: 0 0 1 0;
+    border: round $accent;
+}
+
+#stations {
+    height: 1fr;
+    border: round $primary;
+}
+
+#stations > .datatable--header {
+    background: $panel;
+    color: $accent;
+    text-style: bold;
+}
+
+#stations > .datatable--cursor {
+    background: $accent;
+    color: $text;
+}
+
+#stations > .datatable--hover {
+    background: $boost;
+}
+
+/* ---- alt bar ---- */
+#bottom {
+    dock: bottom;
+    height: auto;
+}
+
+#now {
+    height: 1;
+    padding: 0 1;
+    background: $boost;
+    color: $text;
+}
+
+Footer {
+    dock: none;
+    background: $panel;
+}
